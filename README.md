@@ -16,3 +16,7 @@ While the installation process from `github` is relatively painless for Mac/Linu
 If you are attending a Slidify workshop, and are having installation troubles, please post it as an [issue](http://github.com/slidify/workshop/issues/new). Make sure to outline the exact steps you undertook, and also paste the output of your `sessionInfo()` so that it would be easier for me to help you debug. 
 
 __Given that installation can be time consuming (especially on Windows), I would strongly urge everyone attending the workshop to pre-install it beforehand.__
+
+#### Demonstrations
+
+All demonstrations for the workshop can be found in the [demos folder](demos). The instructions for the demos can be found in the tutorials.
