@@ -75,5 +75,35 @@ __deckjs__
 - theme: web-2.0, neon, swiss
 - transition: fade, horizontal-slide, vertical-slide
 
+#### Vertical Slides
+
+Some frameworks like `revealjs` and `flowtime` support vertical slides. They are triggered by specifying the slide layout to be `vertical`. Here is a [simple example](vertical/index.Rmd)
+
+    ---
+    title: Frameworks
+    framework: revealjs
+    mode: selfcontained
+    url: {lib: ../libraries}
+    --- &vertical
+         
+    ## Slide 1
+         
+    Some content
+    
+    *** 
+        
+    ## Sub Slide 1
+        
+    ***
+        
+    ## Sub Slide 2
+    
+Slidifying this results in [this deck](http://slidify.github.io/demos/frameworks/vertical)
+
+You can set `framework: flowtime` to render the same slide deck using FlowtimeJS.
+
+
+
+
     
 
