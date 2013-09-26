@@ -5,7 +5,7 @@ framework   : minimal
 highlighter : prettify
 hitheme     : twitter-bootstrap
 mode        : selfcontained
-github      : {user: slidify, repo: lectureSite, branch: gh-pages}
+github      : {user: slidify, repo: workshops, branch: gh-pages}
 ---
 
 # Slidify Workshops
