@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>How Slidify Works?</title>
+  <title>Widgets</title>
   <meta charset="utf-8">
-  <meta name="description" content="How Slidify Works?">
+  <meta name="description" content="Widgets">
   <meta name="author" content="Ramnath Vaidyanathan">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/phone.css" 
     media="only screen and (max-device-width: 480px)" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
-  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/solarized_light.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/app.css"></link>
-<link rel=stylesheet href="./assets/css/callouts.css"></link>
-<link rel=stylesheet href="./assets/css/draggable.css"></link>
-<link rel=stylesheet href="./assets/css/ribbons.css"></link>
-<link rel=stylesheet href="http://fonts.googleapis.com/css?family=Crimson+Text"></link>
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/gh-buttons.css" >
+  <link rel="stylesheet" href="../../libraries/highlighters/highlight.js/css/solarized_light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="../02/assets/css/app.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
-  <script data-main="libraries/frameworks/io2012/js/slides" 
-    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  <script>window.jQuery || document.write('<script src="../../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../../libraries/frameworks/io2012/js/slides" 
+    src="../../libraries/frameworks/io2012/js/require-1.0.8.min.js">
   </script>
   
   
@@ -34,9 +31,16 @@
   <slides class="layout-widescreen">
     
     <!-- LOGO SLIDE -->
-        <slide class="title-slide segue nobackground">
+      <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="../../assets/img/slidify_logo_big.png">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>How Slidify Works?</h1>
+    <h1>Widgets</h1>
     <h2>Slidify Workshop</h2>
     <p>Ramnath Vaidyanathan<br/></p>
   </hgroup>
@@ -45,534 +49,158 @@
     
 
     <!-- SLIDES -->
-    <slide class="" id="slide-1" style="background:;">
+    <slide class="segue dark nobackground" id="slide-1" style="background:;">
   <article data-timings="">
-    
+    <p><q>A widget is a collection of stylesheets, javascripts and layouts that add additional functionality to a slide deck.</q></p>
+
   </article>
   <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#slidify/workshops/edit/gh-pages/tutorials/02/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://slidify.github.io/workshops' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/slidify/workshops/issues/new?body=%20GENERATED_URL_TO_DEMO%0a%0a%20%20%20%20Long%20description%20of%20the%20issue:%0a%20%20%20%20Browser%20version(s):%0a%20%20%20%20Steps%20to%20reproduce:%0a%20%20%20%20Screenshot%20showing%20the%20issue:%0a%0a%20%20%20%20%60%60%60%0a%20%20%20%20Enter%20code%20samples%20here%20if%20necessary%0a%20%20%20%20%60%60%60' class="button icon comment" target="_self">Comment</a>  
+  </div>
 </slide>
 
 <slide class="segue dark nobackground" id="slide-2" style="background:;">
   <hgroup>
-    <h2>Deck</h2>
+    <h2>MathJax</h2>
   </hgroup>
   <article data-timings="">
     
   </article>
   <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#slidify/workshops/edit/gh-pages/tutorials/02/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://slidify.github.io/workshops' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/slidify/workshops/issues/new?body=%20GENERATED_URL_TO_DEMO%0a%0a%20%20%20%20Long%20description%20of%20the%20issue:%0a%20%20%20%20Browser%20version(s):%0a%20%20%20%20Steps%20to%20reproduce:%0a%20%20%20%20Screenshot%20showing%20the%20issue:%0a%0a%20%20%20%20%60%60%60%0a%20%20%20%20Enter%20code%20samples%20here%20if%20necessary%0a%20%20%20%20%60%60%60' class="button icon comment" target="_self">Comment</a>  
+  </div>
 </slide>
 
-<slide class="centrepre" id="step3a" style="background:;">
+<slide class="wrappre centrepre" id="slide-3" style="background:;">
   <article data-timings="">
-    
-<pre><code>---
-title: Slidify
-author: Ramnath Vaidyanathan
-framework: io2012
+    <pre><code>---
+title: MathJax
+widgets: [mathjax]
+mode: draft
 ---
-## Get Started
 
-Slidify is easy to use, only three rules!
+## Mathjax ##
 
-1. Write content using R Markdown
-3. Add properties using YAML
-4. Separate slides using `---`
-
----
-## Example Slide
-
-Let us create a __scatterplot__
-
-```{r}
-require(ggplot2)
-qplot(wt, mpg, data = mtcars)
-```
+$$
+\begin{aligned}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
+$$
 </code></pre>
 
-
-<div id='draggable5' class="draggable ui-widget-content ">
-  <div class='callout left'>
-    <p>Properties</p>
-
-  </div>
-</div>
   </article>
   <!-- Presenter Notes -->
-</slide>
-
-<slide class="centrepre" id="step3b" style="background:;">
-  <article data-timings="">
-    
-<pre><code>---
-title: Slidify
-author: Ramnath Vaidyanathan
-framework: io2012
----
-## Get Started
-
-Slidify is easy to use, only three rules!
-
-1. Write content using R Markdown
-3. Add properties using YAML
-4. Separate slides using `---`
-
----
-## Example Slide
-
-Let us create a __scatterplot__
-
-```{r}
-require(ggplot2)
-qplot(wt, mpg, data = mtcars)
-```
-</code></pre>
-
-
-<div id='draggable6' class="draggable ui-widget-content ">
-  <div class='callout left'>
-    <p>Slide</p>
-
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#slidify/workshops/edit/gh-pages/tutorials/02/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://slidify.github.io/workshops' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/slidify/workshops/issues/new?body=%20GENERATED_URL_TO_DEMO%0a%0a%20%20%20%20Long%20description%20of%20the%20issue:%0a%20%20%20%20Browser%20version(s):%0a%20%20%20%20Steps%20to%20reproduce:%0a%20%20%20%20Screenshot%20showing%20the%20issue:%0a%0a%20%20%20%20%60%60%60%0a%20%20%20%20Enter%20code%20samples%20here%20if%20necessary%0a%20%20%20%20%60%60%60' class="button icon comment" target="_self">Comment</a>  
   </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
 </slide>
 
-<slide class="centrepre" id="step3c" style="background:;">
-  <article data-timings="">
-    
-<pre><code>---
-title: Slidify
-author: Ramnath Vaidyanathan
-framework: io2012
----
-## Get Started
-
-Slidify is easy to use, only three rules!
-
-1. Write content using R Markdown
-3. Add properties using YAML
-4. Separate slides using `---`
-
----
-## Example Slide
-
-Let us create a __scatterplot__
-
-```{r}
-require(ggplot2)
-qplot(wt, mpg, data = mtcars)
-```
-</code></pre>
-
-
-<div id='draggable7' class="draggable ui-widget-content ">
-  <div class='callout left'>
-    <p>Separator</p>
-
-  </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="centrepre" id="step3d" style="background:;">
-  <article data-timings="">
-    
-<pre><code>---
-title: Slidify
-author: Ramnath Vaidyanathan
-framework: io2012
----
-## Get Started
-
-Slidify is easy to use, only three rules!
-
-1. Write content using R Markdown
-3. Add properties using YAML
-4. Separate slides using `---`
-
----
-## Example Slide
-
-Let us create a __scatterplot__
-
-```{r}
-require(ggplot2)
-qplot(wt, mpg, data = mtcars)
-```
-</code></pre>
-
-
-<div id='draggable8' class="draggable ui-widget-content ">
-  <div class='callout right'>
-    <p>Markdown</p>
-
-  </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="centrepre" id="step3e" style="background:;">
-  <article data-timings="">
-    
-<pre><code>---
-title: Slidify
-author: Ramnath Vaidyanathan
-framework: io2012
----
-## Get Started
-
-Slidify is easy to use, only three rules!
-
-1. Write content using R Markdown
-3. Add properties using YAML
-4. Separate slides using `---`
-
----
-## Example Slide
-
-Let us create a __scatterplot__
-
-```{r}
-require(ggplot2)
-qplot(wt, mpg, data = mtcars)
-```
-</code></pre>
-
-
-<div id='draggable9' class="draggable ui-widget-content ">
-  <div class='callout right'>
-    <p>Code Chunk</p>
-
-  </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="segue dark nobackground" id="slide-8" style="background:;">
+<slide class="" id="slide-4" style="background:lightgoldenrodyellow;">
   <hgroup>
-    <h2>Slide</h2>
+    <h2>Try It</h2>
   </hgroup>
   <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+    <p><a class='example'>Your Turn</a></p>
 
-<slide class="centrepre" id="slide-9" style="background:;">
-  <article data-timings="">
-    <pre><code>--- {class: [class1, class2], id: id}
+<ol>
+<li>Open <code>demos/widgets/mathjax/index.Rmd</code></li>
+<li>Slidify and Open <code>index.html</code></li>
+</ol>
 
-## Title
-
-Some content
-
-*** {name: block1, class: class3}
-
-## Block1 Title
-
-Some contents of block 1
-
-*** {bg: green}
-
-## Block2 Title
-
-Some contents of block 2
-</code></pre>
+<p>You can experiment by adding other equations.</p>
 
   </article>
   <!-- Presenter Notes -->
-</slide>
-
-<slide class="centrepre" id="step1a" style="background:;">
-  <article data-timings="">
-    
-<pre><code class="no-highlight">
- --- {class: [class1, class2], id: id}
-
- ## Title
-
- Some content
-
- *** {name: block1, class: class3}
-
- ## Block1 Title
-
- Some contents of block 1
-
- *** {bg: green}
-
- ## Block2 Title
-
- Some contents of block 2
-
-
-</code></pre>
-
-
-<div id='' class="draggable ui-widget-content ">
-  <div class='callout right'>
-    <p>Properties</p>
-
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#slidify/workshops/edit/gh-pages/tutorials/02/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://slidify.github.io/workshops' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/slidify/workshops/issues/new?body=%20GENERATED_URL_TO_DEMO%0a%0a%20%20%20%20Long%20description%20of%20the%20issue:%0a%20%20%20%20Browser%20version(s):%0a%20%20%20%20Steps%20to%20reproduce:%0a%20%20%20%20Screenshot%20showing%20the%20issue:%0a%0a%20%20%20%20%60%60%60%0a%20%20%20%20Enter%20code%20samples%20here%20if%20necessary%0a%20%20%20%20%60%60%60' class="button icon comment" target="_self">Comment</a>  
   </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
-  <aside class="note" id="">
-    <section>
-      <h3>Properties</h3>
-
-<p>Slide properties are key-value pairs that are passed to the layout. You can specify class, id and bg and style the slide, either by using built in classes, or specifying additional css.</p>
-
-<pre><code>--- {class: [class1, class2], id: id}
-</code></pre>
-
-<p>You can also use symbolic css style prefixes for frequently used properties. For instance, a dot indicates class, a hash refers to id and an ampersand identifies a layout.</p>
-
-<pre><code>--- .class1 .class2 #id
-</code></pre>
-
-    </section>
-  </aside>
 </slide>
 
-<slide class="centrepre" id="step1b" style="background:;">
-  <article data-timings="">
-    
-<pre><code class="no-highlight">
- --- {class: [class1, class2], id: id}
-
- ## Title
-
- Some content
-
- *** {name: block1, class: class3}
-
- ## Block1 Title
-
- Some contents of block 1
-
- *** {bg: green}
-
- ## Block2 Title
-
- Some contents of block 2
-
-
-</code></pre>
-
-
-<div id='' class="draggable ui-widget-content ">
-  <div class='callout left'>
-    <p>Title</p>
-
-  </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="centrepre" id="step1c" style="background:;">
-  <article data-timings="">
-    
-<pre><code class="no-highlight">
- --- {class: [class1, class2], id: id}
-
- ## Title
-
- Some content
-
- *** {name: block1, class: class3}
-
- ## Block1 Title
-
- Some contents of block 1
-
- *** {bg: green}
-
- ## Block2 Title
-
- Some contents of block 2
-
-
-</code></pre>
-
-
-<div id='' class="draggable ui-widget-content ">
-  <div class='callout left'>
-    <p>Content</p>
-
-  </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="centrepre" id="step1d" style="background:;">
-  <article data-timings="">
-    
-<pre><code class="no-highlight">
- --- {class: [class1, class2], id: id}
-
- ## Title
-
- Some content
-
- *** {name: block1, class: class3}
-
- ## Block1 Title
-
- Some contents of block 1
-
- *** {bg: green}
-
- ## Block2 Title
-
- Some contents of block 2
-
-
-</code></pre>
-
-
-<div id='' class="draggable ui-widget-content ">
-  <div class='callout left'>
-    <p>Blocks</p>
-
-  </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
-  <aside class="note" id="">
-    <section>
-      <h2>Blocks</h2>
-
-<p>Blocks are slides nested within a slide, identified by three stars. Just like a slide, they can contain  properties, title and content. </p>
-
-<p>There are two types of blocks - named and unnamed. A block can be named by specifying the property <code>{name: block1}</code> (or using the symbolic shortcut <code>{=block1}</code>). </p>
-
-<p>A block with the name <code>block1</code> can be accessed in a slide layout as <code>slide.block1</code>. The title and content of this block can be accessed as <code>slide.block1.title</code> and <code>slide.block1.content</code>. Unnamed blocks are aggregated into the namespace <code>slide.blocks</code>. </p>
-
-    </section>
-  </aside>
-</slide>
-
-<slide class="dark nobackground segue" id="slide-14" style="background:;">
+<slide class="segue dark nobackground" id="slide-5" style="background:;">
   <hgroup>
-    <h2>Code Chunks</h2>
+    <h2>Quiz</h2>
   </hgroup>
   <article data-timings="">
     
   </article>
   <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#slidify/workshops/edit/gh-pages/tutorials/02/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://slidify.github.io/workshops' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/slidify/workshops/issues/new?body=%20GENERATED_URL_TO_DEMO%0a%0a%20%20%20%20Long%20description%20of%20the%20issue:%0a%20%20%20%20Browser%20version(s):%0a%20%20%20%20Steps%20to%20reproduce:%0a%20%20%20%20Screenshot%20showing%20the%20issue:%0a%0a%20%20%20%20%60%60%60%0a%20%20%20%20Enter%20code%20samples%20here%20if%20necessary%0a%20%20%20%20%60%60%60' class="button icon comment" target="_self">Comment</a>  
+  </div>
 </slide>
 
-<slide class="centrepre" id="chunk1" style="background:;">
+<slide class="wrappre centrepre" id="slide-6" style="background:;">
   <article data-timings="">
-    
-<pre><code>```{r example, fig.width = 6, comment = NA}
-x &lt;- 1+1
-rnorm(5)
-```
+    <pre><code>---
+title: Interactive Quiz
+widgets: [bootstrap, quiz]
+mode: draft
+--- &amp;radio
+
+## Question 1
+
+What is 1 + 1?
+
+1. 1 
+2. _2_
+3. 3
+
+*** .hint
+
+This is a hint
+
+*** .explanation
+
+This is an explanation
 </code></pre>
 
-
-<div id='markup' class="draggable ui-widget-content build">
-  <div class='callout left'>
-    <p>Markup</p>
-
-  </div>
-</div>
-<div id='label' class="draggable ui-widget-content build">
-  <div class='callout top'>
-    <p>Label</p>
-
-  </div>
-</div>
-<div id='options' class="draggable ui-widget-content build">
-  <div class='callout top'>
-    <p>Options</p>
-
-  </div>
-</div>
-<div id='code1' class="draggable ui-widget-content build">
-  <div class='callout bottom'>
-    <p>Code</p>
-
-  </div>
-</div>
   </article>
   <!-- Presenter Notes -->
-</slide>
-
-<slide class="centrepre" id="chunk2" style="background:;">
-  <article data-timings="">
-    
-<pre><code>```{r example, fig.width = 6, comment = NA}
-x &lt;- 1+1
-rnorm(5)
-```
-</code></pre>
-
-
-<div id='markup' class="draggable ui-widget-content ">
-  <div class='callout left'>
-    <p>Markup</p>
-
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#slidify/workshops/edit/gh-pages/tutorials/02/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://slidify.github.io/workshops' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/slidify/workshops/issues/new?body=%20GENERATED_URL_TO_DEMO%0a%0a%20%20%20%20Long%20description%20of%20the%20issue:%0a%20%20%20%20Browser%20version(s):%0a%20%20%20%20Steps%20to%20reproduce:%0a%20%20%20%20Screenshot%20showing%20the%20issue:%0a%0a%20%20%20%20%60%60%60%0a%20%20%20%20Enter%20code%20samples%20here%20if%20necessary%0a%20%20%20%20%60%60%60' class="button icon comment" target="_self">Comment</a>  
   </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
 </slide>
 
-<slide class="dark quote nobackground" id="slide-17" style="background:;">
-  <article data-timings="">
-    <p><q>The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.</q></p>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="segue dark nobackground" id="slide-18" style="background:;">
+<slide class="" id="slide-7" style="background:lightgoldenrodyellow;">
   <hgroup>
-    <h2>Frameworks</h2>
+    <h2>Try It</h2>
   </hgroup>
   <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+    <p><a class='example'>Your Turn</a></p>
 
-<slide class="centrepre wrap" id="impress-example" style="background:;">
-  <article data-timings="">
-    
-<pre><code>---
-title: Testing ImpressJS
-author: Ramnath Vaidyanathan
-mode  : selfcontained
-framework: impressjs
-github: {user: ramnathv, repo: slidify}
-twitter: {text: &quot;Slidify with impress.js!&quot;}
---- .slide x:-1000 y:-1500
+<h3>Basic</h3>
 
-&lt;q&gt;Aren&#39;t you just **bored** with all those slides-based presentations?&lt;/q&gt;
+<ol>
+<li>Open <code>demos/widgets/quiz/index.Rmd</code></li>
+<li>Slidify and Open <code>index.html</code></li>
+</ol>
 
---- .slide x:0 y:-1500
+<h3>Intermediate</h3>
 
-&lt;q&gt;Don&#39;t you think that presentations given **in modern browsers** shouldn&#39;t **copy the limits** of &#39;classic&#39; slide decks?&lt;/q&gt;
-
---- .slide x:1000 y:-1500
-
-&lt;q&gt;Would you like to **impress your audience** with **stunning visualization** of your talk?&lt;/q&gt;
-</code></pre>
-
-<style>#impress-example pre{width: 95%}</style>
-
+<p>You can find more question types <a href="http://slidify.github.io/iquiz">here</a>. Press <code>p</code> on any slide to get the Rmd source, paste it in your <code>index.Rmd</code> file and see how it works.</p>
 
   </article>
   <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#slidify/workshops/edit/gh-pages/tutorials/02/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://slidify.github.io/workshops' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/slidify/workshops/issues/new?body=%20GENERATED_URL_TO_DEMO%0a%0a%20%20%20%20Long%20description%20of%20the%20issue:%0a%20%20%20%20Browser%20version(s):%0a%20%20%20%20Steps%20to%20reproduce:%0a%20%20%20%20Screenshot%20showing%20the%20issue:%0a%0a%20%20%20%20%60%60%60%0a%20%20%20%20Enter%20code%20samples%20here%20if%20necessary%0a%20%20%20%20%60%60%60' class="button icon comment" target="_self">Comment</a>  
+  </div>
 </slide>
 
     <slide class="backdrop"></slide>
@@ -587,7 +215,7 @@ twitter: {text: &quot;Slidify with impress.js!&quot;}
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Deck'>
+        data-slide=2 title='MathJax'>
          2
       </a>
     </li>
@@ -599,13 +227,13 @@ twitter: {text: &quot;Slidify with impress.js!&quot;}
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title=''>
+        data-slide=4 title='Try It'>
          4
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title=''>
+        data-slide=5 title='Quiz'>
          5
       </a>
     </li>
@@ -617,80 +245,8 @@ twitter: {text: &quot;Slidify with impress.js!&quot;}
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title=''>
+        data-slide=7 title='Try It'>
          7
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Slide'>
-         8
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title=''>
-         9
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title=''>
-         10
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title=''>
-         11
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title=''>
-         12
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title=''>
-         13
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Code Chunks'>
-         14
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title=''>
-         15
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title=''>
-         16
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=17 title=''>
-         17
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='Frameworks'>
-         18
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=19 title=''>
-         19
       </a>
     </li>
   </ul>
@@ -702,12 +258,11 @@ twitter: {text: &quot;Slidify with impress.js!&quot;}
   <![endif]-->
 </body>
   <!-- Load Javascripts for Widgets -->
-  <script src="./assets/js/z_app.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="http://bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
 
   <!-- LOAD HIGHLIGHTER JS FILES -->
-  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script src="../../libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- DONE LOADING HIGHLIGHTER JS FILES -->
    

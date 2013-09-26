@@ -40,6 +40,6 @@ __Given that installation can be time consuming (especially on Windows), I would
 1. [Introduction](tutorials/01)
 2. [Frameworks](tutorials/02)
 3. [Layouts](tutorials/03)
-
+4. [Widgets](tutorials/04)
 
 <style>ol.linenums {margin-left: -5px;}</style>

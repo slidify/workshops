@@ -127,6 +127,18 @@ include("../../demos/frameworks/vertical/index.Rmd", " \t")
 
 <iframe src='../../demos/frameworks/vertical/index.html'></iframe>
 
+--- .segue .dark .nobackground
+
+## ImpressJS
+
+--- .centerpre #impress
+
+```{r echo = F, results = 'asis', comment = NA, cache = F}
+include("../../demos/frameworks/impressjs/index.Rmd", " \t")
+```
+
+
+
 
 
 
