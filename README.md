@@ -8,7 +8,7 @@ Slidify is not on CRAN and needs to be installed from `github` using the `devtoo
 
 ```S
 pkgs <- c("slidify", "slidifyLibraries", "rCharts")
-devtools::install_github(pkgs, "ramnathv", ref = "dev")
+devtools::install_github(pkgs, "ramnathv")
 ```
 
 While the installation process from `github` is relatively painless for Mac/Linux/Ubuntu users, it can make Windows users jump through hoops. For those of you on Windows that hit a bottleneck, here is an [excellent blog post](http://thiagosilva.wordpress.com/2013/02/17/installing-slidify-on-a-windows-machine/) that takes you through an alternate installation process that has been reported to work well.
